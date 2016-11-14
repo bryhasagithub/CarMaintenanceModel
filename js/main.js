@@ -21,13 +21,15 @@ var togglePic = false;
 $(document).ready(function() {
     $("#popUpBox").hide();   
 	$("#headerBar").hide().slideDown(600);
-	$("#headLogo").hide().fadeIn(1100);   
+	$("#headLogo").hide().fadeIn(1100); 
+    $("#storyLine").hide().fadeIn(1100); 
+    $("#carTitle").hide().fadeIn(1100); 
     $("#car").hide();
 
     $(document).scroll(function() {
     var y = $(this).scrollTop();
     
-    if (y > 600  && togglePic== false) {
+    if (y > 550  && togglePic== false) {
         loadPartList();
         loadCarList();
         $("#listBox").hide().slideDown(500);
@@ -63,9 +65,6 @@ $(document).ready(function() {
             nextSelectedIMG = currentSelectedIMG;
         });
     }
-
-
-    
  });
 //when button is selected, slides up all other components that aren't what is selected.
 //click on headtitle to reset car Model
@@ -77,21 +76,6 @@ $(document).ready(function() {
         $("#popUpBox").hide();
         resetInfo();
     });
-
-//opens box with mouseover
-
-    $(".parts").mouseover(function() {
-        var selectedPart = this.id;
-        var coord = $(("#"+selectedPart)).position();
-    });
-
-
-
-
-
-
-
-
 
 
 
