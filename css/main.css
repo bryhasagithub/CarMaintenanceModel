@@ -22,8 +22,7 @@
 
 
 html{        
-	background-color: #fff; 
-	overflow-x:hidden;
+	background-image: -webkit-linear-gradient(top,  #1a8cff, #ff7733);
 	height:2300px;
 	padding: 0px;
 }
@@ -48,6 +47,7 @@ h2{
 }
 #headTitle{
 	top:30%;
+	color: white;
 }
 .frontPg1{
 	position: absolute;
@@ -69,7 +69,7 @@ header#headerBar{
 	position: relative;
   	border-style: solid;
  	border-width: 3px;
- 	border-color: black;
+ 	border-color: white;
  	margin: 0 auto;
  	padding: 0px;
  	height: 550px;
@@ -92,6 +92,7 @@ header#headerBar{
 	width: 70%;
 	z-index: 1;
 	position: relative;
+
 }
 #storyLine{
 	width: 50%;
@@ -110,8 +111,6 @@ header#headerBar{
 	top:386px;
 	width:300px;
 	left:2%;
-	-webkit-filter: drop-shadow(0px 0px 2px red); /* Safari */
-    filter: drop-shadow(0px 0px 2px red);
 }
 #finger2{
 	z-index: -1;
@@ -119,8 +118,6 @@ header#headerBar{
 	top:386px;
 	width:300px;
 	right:2%;
-	-webkit-filter: drop-shadow(0px 0px 2px red); /* Safari */
-    filter: drop-shadow(0px 0px 2px red);
 }
 
 /*Top Navi Bar Content*/
@@ -155,8 +152,8 @@ img#headLogo{
 	text-align: center;
 }
 img#headLogo:hover{
-	-webkit-filter: drop-shadow(0px 0px 2px red); /* Safari */
-    filter: drop-shadow(0px 0px 2px red);
+	-webkit-filter: drop-shadow(0px 0px 2px rgb(26, 140, 255)); /* Safari */
+    filter: drop-shadow(0px 0px 2px rgb(26, 140, 255));
 }
 .bgroundImage{
 	z-index: -5;
@@ -186,7 +183,7 @@ img#headLogo:hover{
  	margin: 0 auto;
   	border-style: solid;
  	border-width: 2px;
- 	border-color: black;
+ 	border-color: white;
  	padding: 0px;
 }
 #partsContainer{
@@ -204,23 +201,23 @@ img#headLogo:hover{
 	-moz-border-radius: 11;
 	border-radius: 11px;
 	font-family: 'BenchNine', sans-serif;
-	background: white;
+	background: rgba(0,0,0,0);
 	color: #000000;
 	font-size:14px;
 	font-style: bold;
 	padding: 1px 2px 1px 2px;
-	border: solid #000000 2px;
+	border: solid white 2px;
 	text-decoration: none;
 	outline: none;
 }
 
 .btn:hover {
 	background: white;
-	background-image: -webkit-linear-gradient(top, #ffffff, rgb(255, 77, 77));
-	background-image: -moz-linear-gradient(top, #ffffff, rgb(255, 77, 77));
-	background-image: -ms-linear-gradient(top, #ffffff, rgb(255, 77, 77));
-	background-image: -o-linear-gradient(top, #ffffff, rgb(255, 77, 77));
-	background-image: linear-gradient(to bottom, #ffffff, rgb(255, 77, 77));
+	background-image: -webkit-linear-gradient(top, #ffffff, #bfbfbf);
+	background-image: -moz-linear-gradient(top, #ffffff, #bfbfbf);
+	background-image: -ms-linear-gradient(top, #ffffff,#bfbfbf);
+	background-image: -o-linear-gradient(top, #ffffff,#bfbfbf);
+	background-image: linear-gradient(to bottom, #ffffff, #bfbfbf);
 	text-decoration: none;
 }
 
@@ -293,8 +290,8 @@ img#headLogo:hover{
 	top:5%;
 }
 .infoBox img:hover{
-	-webkit-filter: drop-shadow(0px 0px 5px red); /* Safari */
-    filter: drop-shadow(0px 0px 5px red);
+	-webkit-filter: drop-shadow(0px 0px 5px rgb(26, 140, 255)); /* Safari */
+    filter: drop-shadow(0px 0px 5px rgb(26, 140, 255));
 }
 
 .frontPg2{
@@ -303,8 +300,8 @@ img#headLogo:hover{
 /*---------------------general style---------------------*/
 a:link {text-decoration: none;}
 a:visited {text-decoration: none;}
-a:hover {color: rgb(255, 77, 77);}
-a:active {color: rgb(255, 77, 77);}
+a:hover {color: rgb(26, 140, 255);}
+a:active {color: rgb(26, 140, 255);}
 /*------------------------Footer--------------------------*/
 
 #listBox {
