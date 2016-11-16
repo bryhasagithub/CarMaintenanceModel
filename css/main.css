@@ -22,7 +22,7 @@
 
 
 html{        
-	background-image: -webkit-linear-gradient(top,  #1a8cff, #ff7733);
+	background-image: white;
 	height:2300px;
 	padding: 0px;
 }
@@ -34,20 +34,28 @@ body {
 h1{
 	color: black;
 	font-family:'andesFont', sans-serif;
-    font-size: 70px;
+    font-size: 80px;
     font-weight:normal;
 	position: relative;
 	margin: 0 auto;
 	text-align: center;
-	top:8%;
 }
 h2{
 	font-family: 'BenchNine', sans-serif;
 	font-size: 40px;
 }
 #headTitle{
-	top:30%;
-	color: white;
+	top:25%;
+
+}
+.infoBox p {
+	z-index: 0;
+	position: relative;
+	color:white;
+	width: 100%;
+	margin:0 auto;
+    line-height : 20px;
+    font-size: 12px;
 }
 .frontPg1{
 	position: absolute;
@@ -69,7 +77,7 @@ header#headerBar{
 	position: relative;
   	border-style: solid;
  	border-width: 3px;
- 	border-color: white;
+ 	border-color: #bfbfbf;
  	margin: 0 auto;
  	padding: 0px;
  	height: 550px;
@@ -171,7 +179,7 @@ img#headLogo:hover{
 	display: inline-block;
 	width: 100%;
 	height: 300px;
-	top: 1500px;
+	top: 1600px;
 	background-color: black;
 }
 #listBox{
@@ -183,8 +191,8 @@ img#headLogo:hover{
  	margin: 0 auto;
   	border-style: solid;
  	border-width: 2px;
- 	border-color: white;
- 	padding: 0px;
+ 	border-color: #bfbfbf;
+ 	padding: 2px;
 }
 #partsContainer{
   	position: relative;
@@ -203,16 +211,16 @@ img#headLogo:hover{
 	font-family: 'BenchNine', sans-serif;
 	background: rgba(0,0,0,0);
 	color: #000000;
-	font-size:14px;
+	font-size:16px;
 	font-style: bold;
 	padding: 1px 2px 1px 2px;
-	border: solid white 2px;
+	border: solid #bfbfbf 2px;
 	text-decoration: none;
 	outline: none;
 }
 
 .btn:hover {
-	background: white;
+	background: bla;
 	background-image: -webkit-linear-gradient(top, #ffffff, #bfbfbf);
 	background-image: -moz-linear-gradient(top, #ffffff, #bfbfbf);
 	background-image: -ms-linear-gradient(top, #ffffff,#bfbfbf);
@@ -224,7 +232,7 @@ img#headLogo:hover{
 #carBox{
 	position: absolute;
 	top:115%;
-	width: 80%;
+	width: 85%;
 	left:20%;
 	padding: 0;
 	margin: 0 auto;
@@ -254,7 +262,7 @@ img#headLogo:hover{
 #name{
 		position: absolute;
 		font-family:'andesFont', sans-serif;
-		font-size: 40px;
+		font-size: 50px;
 		text-decoration: underline;
 		float: left;
 		left: 0px;
@@ -263,11 +271,12 @@ img#headLogo:hover{
 #miles{
 		position: absolute;
 		font-family: 'BenchNine', sans-serif;
-		font-size: 30px;
+		font-size: 40px;
 		top:145px;
 		float: left;
 		left:0px;
 }
+
 .infoBox{
 	position: relative;
 	text-align: center;
@@ -276,22 +285,25 @@ img#headLogo:hover{
   	border-style: solid;
  	border-width: 2px;
  	border-color: white;
- 	padding: 0px;
+ 
  	width: 300px;
  	height:250px;
  	display: inline-block;
  	padding-left: 20px;
  	padding-right: 20px;
  	margin:20px;
+ 	color:white;
 }
-.infoBox img{
+.imgBox{
 	position: relative;
 	width:230px;
-	top:5%;
+	z-index: 0;
+	top:10px;
 }
+
 .infoBox img:hover{
-	-webkit-filter: drop-shadow(0px 0px 5px rgb(26, 140, 255)); /* Safari */
-    filter: drop-shadow(0px 0px 5px rgb(26, 140, 255));
+	-webkit-filter: drop-shadow(0px 0px 6px rgb(26, 140, 255)); /* Safari */
+    filter: drop-shadow(0px 0px 6px rgb(26, 140, 255));
 }
 
 .frontPg2{

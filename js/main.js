@@ -17,9 +17,11 @@ var nextSelectedIMG = "emptyImg";
 var currentPart = "emptyPart";
 var numItem = 0;
 var togglePic = false;
+var descToggle = false;
 //on page load function
 $(document).ready(function() {
-    $("#popUpBox").hide();   
+    $(".boxDesc").hide();
+    $("#popUpBox").hide();
 	$("#headerBar").hide().slideDown(600);
 	$("#headLogo").hide().fadeIn(1100); 
     $("#storyLine").hide().fadeIn(1100); 
@@ -78,11 +80,20 @@ $(document).ready(function() {
     });
 
 
+    $(".imgBox").click(function() {
+        var selectedBoxId = this.id;
+        var descNum =  selectedBoxId.slice(-1);
+        
+            $("#" + selectedBoxId).fadeOut(200);
+            $("#" + descNum).fadeIn(200);
+    });
 
-
-
-
-
+    $(".boxDesc").click(function() {
+        var descNum = this.id;
+             $("#" + descNum).fadeOut(200);
+             $("#" + 'box'+descNum).fadeIn(200);
+        
+    });
 
 
 
