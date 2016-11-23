@@ -1,5 +1,5 @@
 
-window.onscroll = function() {headChange()};
+
 var cars = [ "Tires"  ,"Brake Pads", "Struts","Brake Rotors", "Battery" , "Fuel Pump" , "Fuel Filter" ,
             "Differential Fluid" , "Differential" ,"DriveShaft" , "Clutch" , "Transmission" ,
             "Serpentine Belt" ,"Water Pump" ,"Timing Belt" ,"Ignition Wires","Sparkplugs" ,"Air Filter"  ,
@@ -20,7 +20,7 @@ var togglePic = false;
 var descToggle = false;
 //on page load function
 $(document).ready(function() {
-    $(".boxDesc").hide();
+    $(".boxDesc").animate({opacity: 0});
     $("#popUpBox").hide();
 	$("#headerBar").hide().slideDown(600);
 	$("#headLogo").hide().fadeIn(1100); 
@@ -83,15 +83,15 @@ $(document).ready(function() {
     $(".imgBox").click(function() {
         var selectedBoxId = this.id;
         var descNum =  selectedBoxId.slice(-1);
-        
-            $("#" + selectedBoxId).fadeOut(200);
-            $("#" + descNum).fadeIn(200);
+            $("#" + selectedBoxId).fadeTo(100,0);
+            $("#" + descNum).fadeTo(0,100);
+
     });
 
     $(".boxDesc").click(function() {
         var descNum = this.id;
-             $("#" + descNum).fadeOut(200);
-             $("#" + 'box'+descNum).fadeIn(200);
+             $("#" + descNum).fadeTo(100,0);
+             $("#" + 'box'+descNum).fadeTo(0,100);
         
     });
 
