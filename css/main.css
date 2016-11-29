@@ -285,6 +285,8 @@ img#headLogo:hover{
  	color:white;
  	top:20px;
  	display: inline-block;
+ 	margin-left: 20px;
+ 	margin-right: 20px;
 }
 .imgBox{
 	position: relative;

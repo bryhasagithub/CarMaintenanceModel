@@ -85,14 +85,12 @@ $(document).ready(function() {
         var descNum =  selectedBoxId.slice(-1);
             $("#" + selectedBoxId).fadeTo(100,0);
             $("#" + descNum).fadeTo(0,100);
-
     });
 
     $(".boxDesc").click(function() {
         var descNum = this.id;
              $("#" + descNum).fadeTo(100,0);
              $("#" + 'box'+descNum).fadeTo(0,100);
-        
     });
 
 
