@@ -14,3 +14,6 @@ Haris Hanif
 Sources Used:
 YourMechanic.com
 Edmunds.com
+
+Here is a link to our visualization:
+https://bnguye54.github.io/CarMaintenanceModel/
