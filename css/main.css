@@ -1,26 +1,15 @@
 
-@font-face {
-    font-family:"andesFont";
-    src: url("andes.ttf");
-}
-@font-face {
-    font-family:"taraFont";
-    src: url("TaraBulbousNF.ttf");
-}
-@font-face {
-    font-family:"airStreamFont";
-    src: url("AirstreamNF.ttf");
-}
-@font-face {
-    font-family:"parkFont";
-    src: url("ParkLaneNF.ttf");
-}
-@font-face {
-    font-family:"aero";
-    src: url("AeroviasBrasilNF.ttf");
+@font-face {font-family:"andesFont";src: url("andes.ttf");}
+@font-face {font-family:"taraFont";src: url("TaraBulbousNF.ttf");}
+@font-face {font-family:"ThinCool";src: url("Thin Cool.ttf");}
+@font-face {font-family:"ThinCool Italic";src: url("Thin Cool Italic.ttf");}
+@font-face {font-family:"airStreamFont";src: url("AirstreamNF.ttf");}
+@font-face {font-family:"parkFont";src: url("ParkLaneNF.ttf");}
+@font-face {font-family:"aero";src: url("AeroviasBrasilNF.ttf");
+
 }
 html{        
-	background-image: white;
+	background-color: #cccccc;
 	height:2300px;
 	padding: 0px;
 }
@@ -28,7 +17,6 @@ body {
 	font-family: 'Ek Mukta', sans-serif;
 	margin: 0;
 }
-
 h1{
 	color: black;
 	font-family:'andesFont', sans-serif;
@@ -104,10 +92,10 @@ header#headerBar{
 	position: relative;
 	margin: 0 auto;
 	top:0%;
-	font-size: 22px;
+	font-size: 30px;
 	text-align: center;
 	color: white;
-	font-family: 'BenchNine', sans-serif;
+	font-family: 'ThinCool', sans-serif;
 }
 #finger1{
 	z-index: -1;
@@ -187,7 +175,7 @@ img#headLogo:hover{
  	margin: 0 auto;
   	border-style: solid;
  	border-width: 2px;
- 	border-color: #bfbfbf;
+ 	border-color: black;
  	padding: 2px;
 }
 #partsContainer{
@@ -204,13 +192,14 @@ img#headLogo:hover{
 	-webkit-border-radius: 11;
 	-moz-border-radius: 11;
 	border-radius: 11px;
+	border-color: black;
 	font-family: 'BenchNine', sans-serif;
-	background: rgba(0,0,0,0);
+	background: white;
 	color: #000000;
 	font-size:16px;
 	font-style: bold;
 	padding: 1px 2px 1px 2px;
-	border: solid #bfbfbf 2px;
+	border: solid #000000 2px;
 	text-decoration: none;
 	outline: none;
 }
@@ -279,7 +268,7 @@ img#headLogo:hover{
 	z-index: 1;
   	border-style: solid;
  	border-width: 2px;
- 	border-color: white;
+ 	border-color: v;
  	width: 300px;
  	height:250px;
  	color:white;
@@ -304,11 +293,11 @@ img#headLogo:hover{
 .infoBox img:hover{
 	-webkit-filter: drop-shadow(0px 0px 6px rgb(26, 140, 255)); /* Safari */
     filter: drop-shadow(0px 0px 6px rgb(26, 140, 255));
+
 }
 
-.frontPg2{
-	text-align: center;
-}
+
+.frontPg2{text-align: center;}
 /*---------------------general style---------------------*/
 a:link {text-decoration: none;}
 a:visited {text-decoration: none;}

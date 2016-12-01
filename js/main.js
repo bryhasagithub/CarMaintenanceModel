@@ -18,6 +18,7 @@ var currentPart = "emptyPart";
 var numItem = 0;
 var togglePic = false;
 var descToggle = false;
+
 //on page load function
 $(document).ready(function() {
     $(".boxDesc").animate({opacity: 0});
@@ -51,8 +52,7 @@ $(document).ready(function() {
             currentSelectedIMG = ('item' + numItem);
             if(selectedToggle == false){
                 for (var j = 0; j <cars.length; j++)
-                    if(selectedId != ('partsButton'+j))
-                    {
+                    if(selectedId != ('partsButton'+j)){
                         $('#item' + (j)).slideUp((j*60));
                         getInfo();
                         $('#popUpBox').hide().delay(1000).fadeIn(500);
@@ -79,21 +79,21 @@ $(document).ready(function() {
         resetInfo();
     });
 
-
-    $(".imgBox").click(function() {
+//toggles inbetweeen the img and descprtion for boxes below.
+    $(".imgBox").click( function(event){
+        event.preventDefault();
         var selectedBoxId = this.id;
         var descNum =  selectedBoxId.slice(-1);
-            $("#" + selectedBoxId).fadeTo(100,0);
-            $("#" + descNum).fadeTo(0,100);
+        if ( $(this).hasClass("isShown") ) {
+            $("#" + selectedBoxId).stop().animate({opacity: 0});  
+            $("#" + descNum).stop().animate({opacity: 1});                        
+        } else {
+            $("#" + selectedBoxId).stop().animate({opacity: 1});  
+            $("#" + descNum).stop().animate({opacity: 0}); 
+        }
+        $(this).toggleClass("isShown");
+        return false;
     });
-
-    $(".boxDesc").click(function() {
-        var descNum = this.id;
-             $("#" + descNum).fadeTo(100,0);
-             $("#" + 'box'+descNum).fadeTo(0,100);
-    });
-
-
 
 });
 
