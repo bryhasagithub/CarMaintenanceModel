@@ -9,7 +9,8 @@
 		<link href="https://fonts.googleapis.com/css?family=BenchNine:300" rel="stylesheet">
 		<link href=" css/main.css" rel="stylesheet" type = "text/css">
 		<link rel="icon" type="image/png" href="images/tabWrench.png">
-	    <link rel="stylesheet" type="text/css" href="scatterstylesheet.css">  
+        <link rel="stylesheet" type="text/css" href="scatter/scatterstylesheet.css">
+   		<script type= "text/javascript" src="https://d3js.org/d3.v3.min.js"></script>   
   </head>
 	<body>		
 		<div class = "frontPg1">
@@ -19,7 +20,7 @@
 						<img id ="headLogo" src ="images/headWheel.png"></a>
 					<ul id = "headNav">
 						<li><a href id = "nav"="#">Home</a></li>
-						<li><a href ="./scatter/scatterplot.html">D3 ScatterPlot</a></li>
+						<li><A HREF= "#Scatterplot">D3 ScatterPlot</a></li>
 						<li><A HREF="#info1">How it Works</A></li>
 					</ul>
 				</nav>
@@ -28,8 +29,8 @@
 				<div id = "introBox">
 					<img id = "carTitle" alt="carTitle"  src="images/carTitle.png"/>
 					<p id = "storyLine">Below, you will find a data visualization that shows what and when a car part is expecting replacement on your vehicle using data obtained from YourMechanic.com and Edmunds.com. Scroll down to find out the average expected mileage that a certain car part should be replaced by clicking on the part names.</p>
-					<img id = "finger1" alt="finger1"  src="images/fingerPoint.png"/>
-					<img id = "finger2" alt="finger2"  src="images/fingerPoint2.png"/>
+					<img id = "finger1" alt="finger1"  src="images/fingerPointBlack.png"/>
+					<img id = "finger2" alt="finger2"  src="images/fingerPoint2Black.png"/>
 				</div>
 			</div>
 			<h1 id = "headTitle">The Breakdown</h1>
@@ -63,6 +64,30 @@
 				<p class = "boxDesc" id = "3">	This visualization displays components from a generic rear-wheel drive, manual transmission vehicle but the body line from a 1991 BMW M3. We can expand on this visualization by giving the user the option to pick their body type. A FWD sedan will have different location for their car parts compared to a Mid Engine Bus. Expanding on it this way would be much more applicable to a larger audience.</p>
 				<img class = "imgBox"id = "box3" alt="expand"  src="images/expand.png"/>
 			</div>
+		</div>
+		<div id = "graphBody">
+	    <h1 id = "Scatterplot"><bold> Scatterplot </bold></h1>
+
+	    <!-- Your D3.js code for making a Bar Graph -->
+	    <script type="text/javascript" src="scatter/scatterplot.js"></script>
+	      
+	    <h3 id = "description" >This little additional visualization shows the mileage at when the car part is typically changed out on a pair of axis</h3>
+	    <h3 id = "axisDesc">Y-axis:   Mileage at when maintainence is expected  </br></br> X-axis:   Car part in order from the front to the back of the car</h3>
+
+	    <h3 id = "sources">Link to Sources: </h4>
+	    	<div id = "sourceBox">
+			<li><p><u>Scatterplot</u></p></li>
+				<li><a href = "https://github.com/mbostock/d3/wiki/Zoom-Behavior">Mike Bostock | Github</a></li>
+				<li><a href= "https://bl.ocks.org/mbostock/3892919">Mike Bostock | Bl.ocks</a></li>
+			<li><p><u>Data</u></p></li>
+				<li><a href= "https://www.yourmechanic.com/">YourMechanic</a></li>
+				<li><a href= "https://www.edmunds.com/">Edmunds</a></li>
+			<li><p><u>Tools</u></p></li>
+				<li><a href= "http://www.w3schools.com/">W3 Schools</a></li>
+				<li><a href= "https://www.sublimetext.com/">Sublime</a></li>
+			
+				
+	    	</div>	
 		</div>
 	</body>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>

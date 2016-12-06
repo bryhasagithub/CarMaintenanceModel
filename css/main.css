@@ -1,5 +1,6 @@
 
 @font-face {font-family:"andesFont";src: url("andes.ttf");}
+@font-face {font-family:"betty";src: url("bettynoir.ttf");}
 @font-face {font-family:"taraFont";src: url("TaraBulbousNF.ttf");}
 @font-face {font-family:"ThinCool";src: url("Thin Cool.ttf");}
 @font-face {font-family:"ThinCool Italic";src: url("Thin Cool Italic.ttf");}
@@ -12,6 +13,9 @@ html{
 	background-color: #ffffff;
 	height:2000px;
 	padding: 0px;
+	max-width: 100%;
+	overflow-x: hidden;
+
 }
 body {
 	font-family: 'Ek Mukta', sans-serif;
@@ -31,7 +35,13 @@ h2{
 	font-size: 40px;
 }
 #headTitle{
+	text-align:center; 
+	color:white;
 	top:25%;
+	width:100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: black;
 }
 .infoBox p {
 	z-index: 0;
@@ -61,7 +71,7 @@ header#headerBar{
 	position: relative;
   	border-style: solid;
  	border-width: 3px;
- 	border-color: #bfbfbf;
+ 	border-color: black;
  	margin: 0 auto;
  	padding: 0px;
  	height: 550px;
@@ -77,7 +87,11 @@ header#headerBar{
  	height: 90%;
  	top:3%;
  	margin: 0 auto;
- 	background-color: grey;
+ 	background-image: -webkit-linear-gradient(top, #A9A9A9,#696969);
+	background-image: -moz-linear-gradient(top,#A9A9A9,#696969);
+	background-image: -ms-linear-gradient(top,#A9A9A9,#696969);
+	background-image: -o-linear-gradient(top, #A9A9A9,#696969);
+	background-image: linear-gradient(to bottom, #A9A9A9,#696969);
  	padding: 0px;
 }
 #carTitle{
@@ -163,7 +177,7 @@ img#headLogo:hover{
 	display: inline-block;
 	width: 100%;
 	height: 300px;
-	top: 1600px;
+	top: 1700px;
 	background-color: black;
 }
 #listBox{
@@ -171,7 +185,7 @@ img#headLogo:hover{
   	position: relative;
   	text-align: center;
  	width: 90%;
- 	top:35%;
+ 	top:40%;
  	margin: 0 auto;
   	border-style: solid;
  	border-width: 2px;
@@ -205,17 +219,17 @@ img#headLogo:hover{
 }
 
 .btn:hover {
-	background-image: -webkit-linear-gradient(top, #ffffff, #bfbfbf);
-	background-image: -moz-linear-gradient(top, #ffffff, #bfbfbf);
-	background-image: -ms-linear-gradient(top, #ffffff,#bfbfbf);
-	background-image: -o-linear-gradient(top, #ffffff,#bfbfbf);
-	background-image: linear-gradient(to bottom, #ffffff, #bfbfbf);
+	background-image: -webkit-linear-gradient(top, #ffffff, #A9A9A9);
+	background-image: -moz-linear-gradient(top, #ffffff, #A9A9A9);
+	background-image: -ms-linear-gradient(top, #ffffff,#A9A9A9);
+	background-image: -o-linear-gradient(top, #ffffff,#A9A9A9);
+	background-image: linear-gradient(to bottom, #ffffff, #A9A9A9);
 	text-decoration: none;
 }
 
 #carBox{
 	position: absolute;
-	top:115%;
+	top:130%;
 	width: 85%;
 	left:20%;
 	padding: 0;
@@ -235,7 +249,7 @@ img#headLogo:hover{
 #popUpBox{
 	z-index: 0;
   	position: relative;
-  	top:38%;
+  	top:45%;
   	float: left;
   	left:12%;
  	width: 400px;
@@ -262,7 +276,6 @@ img#headLogo:hover{
 }
 
 .infoBox{
-	top:0px;
 	position: relative;
 	text-align: center;
 	z-index: 1;
@@ -296,7 +309,6 @@ img#headLogo:hover{
 
 }
 
-
 .frontPg2{text-align: center;}
 /*---------------------general style---------------------*/
 a:link {text-decoration: none;}
@@ -310,6 +322,7 @@ a:active {color: rgb(26, 140, 255);}
     -moz-column-count: 7; /* Firefox */
     column-count: 7;
 }
+
 .frontPg2 {
     -webkit-column-count: 1; /* Chrome, Safari, Opera */
     -moz-column-count: 1; /* Firefox */
