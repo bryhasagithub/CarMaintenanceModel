@@ -27,7 +27,7 @@ var svg = d3.select("body").append("svg")
 var colors = d3.scale.category20();
 
 // Get Data
-d3.csv("scatterdata.csv", function(error, data) {
+d3.csv("scatter/scatterdata.csv", function(error, data) {
     
     data.forEach(function(d) {
         d.carpart = d.carpart;
