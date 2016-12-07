@@ -93,11 +93,10 @@ svg .text {
 }
 svg{
   position: relative;
-  background-image: -webkit-linear-gradient(top, #A9A9A9,#696969);
-  background-image: -moz-linear-gradient(top,#A9A9A9,#696969);
-  background-image: -ms-linear-gradient(top,#A9A9A9,#696969);
-  background-image: -o-linear-gradient(top, #A9A9A9,#696969);
-  background-image: linear-gradient(to bottom, #A9A9A9,#696969);
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+  padding: 2px;
   display: block;
   margin: auto;
   top:1750px;
