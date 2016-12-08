@@ -67,7 +67,7 @@ d3.csv("scatter/scatterdata.csv", function(error, data) {
         .attr("x", width/2)
         .attr("y", 40)
         .style("text-anchor", "end")
-        .text("Car Part");
+        .text("Car Parts starting from Front to the Back of the car");
 
     // y-axis
     svg.append("g")
