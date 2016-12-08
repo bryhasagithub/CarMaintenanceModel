@@ -36,7 +36,7 @@ h2{
 }
 #headTitle{
 	text-align:center; 
-	color:white;
+	color: rgb(26, 140, 255);
 	top:25%;
 	width:100%;
 	padding-top: 20px;
@@ -102,10 +102,10 @@ header#headerBar{
 	position: relative;
 	margin: 0 auto;
 	top:0%;
-	font-size: 20px;
+	font-size: 18px;
 	text-align: center;
 	color: white;
-	font-family: 'parkFont', sans-serif;
+	font-family: 'Ek Mukta', sans-serif;
 }
 #finger1{
 	z-index: -1;
@@ -140,7 +140,7 @@ nav ul li {
 	padding: 0px 30px 0px 0px;
 }
 nav ul li a{
-	color: white;
+	color: rgb(26, 140, 255);
 }
 li img{
     top:8px;
@@ -304,12 +304,20 @@ img#headLogo:hover{
     filter: drop-shadow(0px 0px 6px rgb(26, 140, 255));
 
 }
-
+#sourceBox li p{
+	color: rgb(26, 140, 255);
+}
+#noteHead{
+	z-index: -1;
+	position: absolute;
+	top:1020px;
+	left:5%;
+}
 .frontPg2{text-align: center;}
 /*---------------------general style---------------------*/
 a:link {text-decoration: none;}
 a:visited {text-decoration: none;}
-a:hover {color: rgb(26, 140, 255);}
+a:hover {color: white;}
 a:active {color: rgb(26, 140, 255);}
 /*------------------------Footer--------------------------*/
 

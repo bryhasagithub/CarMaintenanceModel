@@ -6,7 +6,7 @@
   margin: 0;
 }
 #graphBody h1{
-  color: white;
+  color: rgb(26, 140, 255);
   width:100%;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -46,7 +46,7 @@ svg .text {
 }
 #sources{
   position: relative;
-  top:550px;
+  top:600px;
   font-family: 'ThinCool', sans-serif;
   text-align: center;
   font-size: 25px;
@@ -57,13 +57,14 @@ svg .text {
   display: block;
   margin: 0  auto;
   width: 100%;
-  top:850px;
+  top:900px;
   padding: none;
   list-style-type: none;
   background-color: black;
   padding: 2px;
 
 }
+
 #sourceBox {
     -webkit-column-count: 3; /* Chrome, Safari, Opera */
     -moz-column-count: 3; /* Firefox */

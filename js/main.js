@@ -7,10 +7,10 @@ var cars = [ "Tires"  ,"Brake Pads", "Struts","Brake Rotors", "Battery" , "Fuel 
              "Radiator" ,"Coolant" , "Engine Mount" , "Engine"];
 
 var mileage = ["25,000 - 50,000 miles", "30,000 - 50,000 miles", "50,000 - 100,000 miles","50,000 - 70,000 miles", "4 - 5 years",
-            "100,000 - 150,000 miles", "25,000 - 30,000 miles", "30,000 - 50,000 miles", "N/A", "N/A", "50,000 - 150,000 miles",
-            "N/A", "40,000 - 60,000 miles", "60,000 - 100,000 miles", "60,000 - 100,000 miles", "50,000 - 60,000 miles", 
-            "20,000 - 60,000 miles", "12,000 - 15,000 miles", "N/A", "N/A", "N/A", "5000 - 10,000 miles", "5000 - 10,000 miles", 
-            "40,000 - 100,000 miles", "N/A", "40,000 - 60,000 miles", "3- 4.5 years", "N/A" ];
+            "100,000 - 150,000 miles", "25,000 - 30,000 miles", "30,000 - 50,000 miles", "Not Often Changed", "Not Often Changed", "50,000 - 150,000 miles",
+            "Not Often Changed", "40,000 - 60,000 miles", "60,000 - 100,000 miles", "60,000 - 100,000 miles", "50,000 - 60,000 miles", 
+            "20,000 - 60,000 miles", "12,000 - 15,000 miles", "Not Often Changed", "Not Often Changed", "Not Often Changed", "5000 - 10,000 miles", "5000 - 10,000 miles", 
+            "40,000 - 100,000 miles", "Not Often Changed", "40,000 - 60,000 miles", "3- 4.5 years", "Not Often Changed" ];
 var selectedToggle = false;
 var currentSelectedIMG = "emptyImg";
 var nextSelectedIMG = "emptyImg";
@@ -140,4 +140,5 @@ function resetInfo(){
     getName.innerHTML = "";
     getMiles.innerHTML = "";
 }
+
 
