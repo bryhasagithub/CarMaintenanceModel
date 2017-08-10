@@ -8,6 +8,7 @@
 @font-face {font-family:"parkFont";src: url("ParkLaneNF.ttf");}
 @font-face {font-family:"aero";src: url("AeroviasBrasilNF.ttf");
 
+
 }
 html{        
 	background-color: #ffffff;
@@ -18,8 +19,8 @@ html{
 
 }
 body {
-	font-family: 'Ek Mukta', sans-serif;
-	margin: 0;
+font-family: 'Raleway', sans-serif !important;
+    margin: 0;
 }
 h1{
 	color: black;
@@ -31,8 +32,11 @@ h1{
 	text-align: center;
 }
 h2{
-	font-family: 'BenchNine', sans-serif;
-	font-size: 40px;
+font-family: 'Raleway', sans-serif !important;
+    font-size: 40px;
+}
+h3{
+font-family: 'Raleway', sans-serif !important;
 }
 #headTitle{
 	text-align:center; 
@@ -105,7 +109,8 @@ header#headerBar{
 	font-size: 18px;
 	text-align: center;
 	color: white;
-	font-family: 'Ek Mukta', sans-serif;
+    font-family: 'Raleway', sans-serif;
+
 }
 #finger1{
 	z-index: -1;
@@ -132,7 +137,7 @@ ul#headNav{
 	color: white;
 	font-size: 16px;
 	top:35%;
-	font-family: 'parkFont', sans-serif;
+	font-family: 'Raleway', sans-serif !important;
 }
 nav ul li {
 	display: inline-block;
@@ -203,10 +208,10 @@ img#headLogo:hover{
 	-moz-border-radius: 11;
 	border-radius: 11px;
 	border-color: black;
-	font-family: 'BenchNine', sans-serif;
+	font-family: 'Raleway', sans-serif !important;
 	background: white;
 	color: #000000;
-	font-size:16px;
+	font-size:12px;
 	font-style: bold;
 	padding: 1px 2px 1px 2px;
 	border: solid #000000 2px;
@@ -255,17 +260,17 @@ img#headLogo:hover{
 }
 #name{
 		position: absolute;
-		font-family:'andesFont', sans-serif;
-		font-size: 50px;
+		font-family: 'Raleway', sans-serif !important;
+		font-size: 30px;
 		text-decoration: underline;
 		float: left;
 		left: 0px;
-		top: -40px;
+		top: -50px;
 }
 #miles{
 		position: absolute;
-		font-family: 'BenchNine', sans-serif;
-		font-size: 40px;
+		font-family: 'Raleway', sans-serif !important;
+		font-size: 30px;
 		float: left;
 		left:0px;
 		top:5%;
@@ -302,7 +307,6 @@ img#headLogo:hover{
 .infoBox img:hover{
 	-webkit-filter: drop-shadow(0px 0px 6px rgb(26, 140, 255)); /* Safari */
     filter: drop-shadow(0px 0px 6px rgb(26, 140, 255));
-
 }
 #sourceBox li p{
 	color: rgb(26, 140, 255);
@@ -333,7 +337,9 @@ a:active {color: rgb(26, 140, 255);}
     column-count: 1;
 }
 
-
+#description{
+    font-size: 20px !important;
+}
 
 
 
