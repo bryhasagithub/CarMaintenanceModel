@@ -1,7 +1,6 @@
 
 #graphBody {
   position: relative;
-  top:1800px;
   text-align: center;
   margin: 0;
 }
@@ -46,7 +45,6 @@ svg .text {
 }
 #sources{
   position: relative;
-  top:600px;
   font-family: 'ThinCool', sans-serif;
   text-align: center;
   font-size: 25px;
@@ -57,7 +55,6 @@ svg .text {
   display: block;
   margin: 0  auto;
   width: 100%;
-  top:900px;
   padding: none;
   list-style-type: none;
   background-color: black;
@@ -99,9 +96,7 @@ svg{
   border-color: black;
   padding: 2px;
   display: block;
-  margin: auto;
-  top:1750px;
-  
+  margin: auto;  
 }
 .label {
   font-size: .9em;
