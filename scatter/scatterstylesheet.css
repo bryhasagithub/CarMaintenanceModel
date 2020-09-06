@@ -96,9 +96,7 @@ svg{
   border-color: black;
   padding: 2px;
   display: block;
-  margin: auto;
-  top:1750px;
-  
+  margin: auto;  
 }
 .label {
   font-size: .9em;
