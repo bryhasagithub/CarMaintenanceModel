@@ -1,6 +1,8 @@
 
 #graphBody {
   position: relative;
+  width: 100%;
+  height: auto;
   text-align: center;
   margin: 0;
 }
@@ -97,6 +99,7 @@ svg{
   padding: 2px;
   display: block;
   margin: auto;  
+  width: 97%;
 }
 .label {
   font-size: .9em;
