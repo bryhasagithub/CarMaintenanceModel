@@ -328,7 +328,7 @@ a:active {
 }
 
 #description {
-    font-size: 20px !important;
+    font-size: 20px;
 }
 
 /* Media Query */
@@ -345,4 +345,24 @@ a:active {
     .infoBox {
         width: 100%;
     }
+
+    #description {
+        font-size: 12px;
+        padding: 10px;
+    }
+    h3 {
+        font-size: 15px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 0;
+    }
+    #name {
+        top: 100px;
+        right: 0px;
+    }
+    #miles {
+        top: 130px;
+        right: 0px;
+    }
+
 }
