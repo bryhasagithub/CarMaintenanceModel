@@ -29,10 +29,8 @@ $(document).ready(function() {
     $("#carTitle").hide().fadeIn(1100); 
     $("#car").hide();
 
-    $(document).scroll(function() {
-    var y = $(this).scrollTop();
     
-    if (y > 550  && togglePic== false) {
+    if (togglePic== false) {
         loadPartList();
         loadCarList();
         $("#listBox").hide().slideDown(500);
@@ -67,7 +65,6 @@ $(document).ready(function() {
             nextSelectedIMG = currentSelectedIMG;
         });
     }
- });
 //when button is selected, slides up all other components that aren't what is selected.
 //click on headtitle to reset car Model
     $("#headTitle").click(function() {

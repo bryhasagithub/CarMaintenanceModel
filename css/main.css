@@ -1,328 +1,323 @@
-
-@font-face {font-family:"andesFont";src: url("andes.ttf");}
-@font-face {font-family:"betty";src: url("bettynoir.ttf");}
-@font-face {font-family:"taraFont";src: url("TaraBulbousNF.ttf");}
-@font-face {font-family:"ThinCool";src: url("Thin Cool.ttf");}
-@font-face {font-family:"ThinCool Italic";src: url("Thin Cool Italic.ttf");}
-@font-face {font-family:"airStreamFont";src: url("AirstreamNF.ttf");}
-@font-face {font-family:"parkFont";src: url("ParkLaneNF.ttf");}
-@font-face {font-family:"aero";src: url("AeroviasBrasilNF.ttf");
-
-
+@font-face {
+    font-family: "andesFont";
+    src: url("andes.ttf");
 }
-html{        
-	background-color: #ffffff;
-	height:2000px;
-	padding: 0px;
-	max-width: 100%;
-	overflow-x: hidden;
-
+@font-face {
+    font-family: "betty";
+    src: url("bettynoir.ttf");
+}
+@font-face {
+    font-family: "taraFont";
+    src: url("TaraBulbousNF.ttf");
+}
+@font-face {
+    font-family: "ThinCool";
+    src: url("Thin Cool.ttf");
+}
+@font-face {
+    font-family: "ThinCool Italic";
+    src: url("Thin Cool Italic.ttf");
+}
+@font-face {
+    font-family: "airStreamFont";
+    src: url("AirstreamNF.ttf");
+}
+@font-face {
+    font-family: "parkFont";
+    src: url("ParkLaneNF.ttf");
+}
+@font-face {
+    font-family: "aero";
+    src: url("AeroviasBrasilNF.ttf");
+}
+html {
+    background-color: #ffffff;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 body {
-font-family: 'Raleway', sans-serif !important;
+    font-family: "Raleway", sans-serif !important;
     margin: 0;
 }
-h1{
-	color: black;
-	font-family:'andesFont', sans-serif;
+h1 {
+    color: black;
+    font-family: "andesFont", sans-serif;
     font-size: 80px;
-    font-weight:normal;
-	position: relative;
-	margin: 0 auto;
-	text-align: center;
+    font-weight: normal;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
 }
-h2{
-font-family: 'Raleway', sans-serif !important;
+h2 {
+    font-family: "Raleway", sans-serif !important;
     font-size: 40px;
 }
-h3{
-font-family: 'Raleway', sans-serif !important;
+h3 {
+    font-family: "Raleway", sans-serif !important;
 }
-#headTitle{
-	text-align:center; 
-	color: rgb(26, 140, 255);
-	top:25%;
-	width:100%;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	background-color: black;
+#headTitle {
+    text-align: center;
+    color: rgb(26, 140, 255);
+    top: 25%;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: black;
 }
 .infoBox p {
-	z-index: 0;
-	color:white;
-	width: 100%;
-	margin:0 auto;
-    line-height : 20px;
+    z-index: 0;
+    color: white;
+    width: 100%;
+    margin: 0 auto;
+    line-height: 20px;
     font-size: 12px;
 }
-.frontPg1{
-	position: absolute;
-	width: 100%;
-	height: 1000px;
+.body {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
 }
-header#headerBar{
-	z-index: 2;
-	position: fixed;
-	top:0;
-	background: #101010;
-	height:35px;
-	opacity: .8;
-	width: 100%;
-	margin:0;
-	display: inline;
+header#headerBar {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    background: #101010;
+    height: 35px;
+    opacity: 0.8;
+    width: 100%;
+    margin: 0;
+    display: inline;
 }
-#outlineBox{
-	position: relative;
-  	border-style: solid;
- 	border-width: 3px;
- 	border-color: black;
- 	margin: 0 auto;
- 	padding: 0px;
- 	height: 550px;
- 	width: 100%;
- 	top:45px;
- 	left:-3px;
+.carContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-#introBox{
-	z-index: 0;
-  	position: relative;
-  	text-align: center;
- 	width: 100%;
- 	height: 90%;
- 	top:3%;
- 	margin: 0 auto;
- 	background-color: black;
- 	padding: 0px;
+#outlineBox {
+    position: relative;
+    border-style: solid;
+    border-width: 3px;
+    border-color: black;
+    margin: 0 auto;
+    padding: 0px;
+    height: 550px;
+    width: 100%;
+    top: 45px;
+    left: -3px;
 }
-#carTitle{
-	width: 70%;
-	z-index: 1;
-	position: relative;
-
+#introBox {
+    z-index: 0;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 90%;
+    top: 3%;
+    margin: 0 auto;
+    background-color: black;
+    padding: 0px;
 }
-#storyLine{
-	width: 50%;
-	z-index: 1;
-	position: relative;
-	margin: 0 auto;
-	top:0%;
-	font-size: 18px;
-	text-align: center;
-	color: white;
-    font-family: 'Raleway', sans-serif;
-
+#carTitle {
+    width: 70%;
+    z-index: 1;
+    position: relative;
 }
-#finger1{
-	z-index: -1;
-	position: absolute;
-	top:386px;
-	width:300px;
-	left:2%;
-}
-#finger2{
-	z-index: -1;
-	position: absolute;
-	top:386px;
-	width:300px;
-	right:2%;
-}
-
 /*Top Navi Bar Content*/
-ul#headNav{
-	z-index: 3;
-	position: absolute;
-	margin: 0 auto;
-	right: 1px;
-	display: inline;
-	color: white;
-	font-size: 16px;
-	top:35%;
-	font-family: 'Raleway', sans-serif !important;
+ul#headNav {
+    z-index: 3;
+    position: absolute;
+    margin: 0 auto;
+    right: 1px;
+    display: inline;
+    color: white;
+    font-size: 16px;
+    top: 35%;
+    font-family: "Raleway", sans-serif !important;
 }
 nav ul li {
-	display: inline-block;
-	color: white;
-	padding: 0px 30px 0px 0px;
+    display: inline-block;
+    color: white;
+    padding: 0px 30px 0px 0px;
 }
-nav ul li a{
-	color: rgb(26, 140, 255);
+nav ul li a {
+    color: rgb(26, 140, 255);
 }
-li img{
-    top:8px;
+li img {
+    top: 8px;
 }
-img#headLogo{
-	position: absolute;
-	z-index: 5;
-	width:32px;
-	height:32px;
-	opacity: 1 !important;
-	text-align: center;
+img#headLogo {
+    position: absolute;
+    z-index: 5;
+    width: 32px;
+    height: 32px;
+    opacity: 1 !important;
+    text-align: center;
 }
-img#headLogo:hover{
-	-webkit-filter: drop-shadow(0px 0px 2px rgb(26, 140, 255)); /* Safari */
+img#headLogo:hover {
+    -webkit-filter: drop-shadow(0px 0px 2px rgb(26, 140, 255)); /* Safari */
     filter: drop-shadow(0px 0px 2px rgb(26, 140, 255));
 }
-.bgroundImage{
-	z-index: -5;
-	position: fixed;
-	width: 100%;
-	top:1000px;
-	background-color: #fff;
-	background-position:bottom;
-	background-repeat: none;
+.bgroundImage {
+    z-index: -5;
+    position: fixed;
+    width: 100%;
+    top: 1000px;
+    background-color: #fff;
+    background-position: bottom;
+    background-repeat: none;
 }
-.frontPg2{
-	position: relative;
-	margin: 0 auto;
-	text-align: center;
-	display: inline-block;
-	width: 100%;
-	height: 300px;
-	top: 1700px;
-	background-color: black;
+.frontPg2 {
+    position: relative;
+    margin: 40px auto;
+    text-align: center;
+	display: flex;
+	justify-content: center;
+    width: 100%;
+    background-color: black;
 }
-#listBox{
-	z-index: 0;
-  	position: relative;
-  	text-align: center;
- 	width: 90%;
- 	top:40%;
- 	margin: 0 auto;
-  	border-style: solid;
- 	border-width: 2px;
- 	border-color: black;
- 	padding: 2px;
+#listBox {
+    z-index: 0;
+    position: relative;
+    text-align: center;
+    width: 90%;
+    top: 40%;
+    margin: 0 auto;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    padding: 2px;
 }
-#partsContainer{
-  	position: relative;
- 	width: 90%;
- 	text-align: center;
- 	margin: 0 auto;
- 	padding: 0px;
-
+#partsContainer {
+    position: relative;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0px;
 }
 .btn {
-	width: 100%;
-	z-index: 3;
-	-webkit-border-radius: 11;
-	-moz-border-radius: 11;
-	border-radius: 11px;
-	border-color: black;
-	font-family: 'Raleway', sans-serif !important;
-	background: white;
-	color: #000000;
-	font-size:12px;
-	font-style: bold;
-	padding: 1px 2px 1px 2px;
-	border: solid #000000 2px;
-	text-decoration: none;
-	outline: none;
+    width: 100%;
+    z-index: 3;
+    -webkit-border-radius: 11;
+    -moz-border-radius: 11;
+    border-radius: 11px;
+    border-color: black;
+    font-family: "Raleway", sans-serif !important;
+    background: white;
+    color: #000000;
+    font-size: 12px;
+    font-style: bold;
+    padding: 1px 2px 1px 2px;
+    border: solid #000000 2px;
+    text-decoration: none;
+    outline: none;
 }
 
 .btn:hover {
-	background-image: -webkit-linear-gradient(top, #ffffff, #A9A9A9);
-	background-image: -moz-linear-gradient(top, #ffffff, #A9A9A9);
-	background-image: -ms-linear-gradient(top, #ffffff,#A9A9A9);
-	background-image: -o-linear-gradient(top, #ffffff,#A9A9A9);
-	background-image: linear-gradient(to bottom, #ffffff, #A9A9A9);
-	text-decoration: none;
+    background-image: -webkit-linear-gradient(top, #ffffff, #a9a9a9);
+    background-image: -moz-linear-gradient(top, #ffffff, #a9a9a9);
+    background-image: -ms-linear-gradient(top, #ffffff, #a9a9a9);
+    background-image: -o-linear-gradient(top, #ffffff, #a9a9a9);
+    background-image: linear-gradient(to bottom, #ffffff, #a9a9a9);
+    text-decoration: none;
 }
 
-#carBox{
-	position: absolute;
-	top:130%;
-	width: 85%;
-	left:20%;
-	padding: 0;
-	margin: 0 auto;
-	opacity: .95;
+#carBox {
+    position: relative;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    opacity: 0.95;
 }
-.parts{
-	position: absolute;
-	width: 72%;
-	margin: 0 auto;
+.parts {
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
 }
-#car{
-	position: absolute;
-	width: 72%;
-	z-index: -10;
+#car {
+    position: absolute;
+    width: 100%;
+    z-index: -10;
 }
-#popUpBox{
-	z-index: 0;
-  	position: relative;
-  	top:45%;
-  	float: left;
-  	left:12%;
- 	width: 400px;
- 	height: 150px;
- 	margin: 0 auto;
- 	padding: 0px;
+#popUpBox {
+    z-index: 0;
+    position: relative;
+    justify-self: flex-start;
+    width: 400px;
+    padding: 0px;
 }
-#name{
-		position: absolute;
-		font-family: 'Raleway', sans-serif !important;
-		font-size: 30px;
-		text-decoration: underline;
-		float: left;
-		left: 0px;
-		top: -50px;
+#name {
+    position: absolute;
+    font-family: "Raleway", sans-serif !important;
+    font-size: 20px;
+    text-decoration: underline;
+	margin: 30px auto 0 30px;
+
 }
-#miles{
-		position: absolute;
-		font-family: 'Raleway', sans-serif !important;
-		font-size: 30px;
-		float: left;
-		left:0px;
-		top:5%;
+#miles {
+    position: absolute;
+    font-family: "Raleway", sans-serif !important;
+    font-size: 15px;
+    top: 30px;
+	margin: 30px auto 0 30px;
 }
 
-.infoBox{
-	position: relative;
-	text-align: center;
-	z-index: 1;
-  	border-style: solid;
- 	border-width: 2px;
- 	border-color: v;
- 	width: 300px;
- 	height:250px;
- 	color:white;
- 	top:20px;
- 	display: inline-block;
- 	margin-left: 20px;
- 	margin-right: 20px;
+.infoBox {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    border-style: solid;
+    border-width: 2px;
+    border-color: v;
+    width: 300px;
+    height: 250px;
+    color: white;
+    top: 20px;
+    display: inline-block;
+    margin-left: 20px;
+    margin-right: 20px;
 }
-.imgBox{
-	position: relative;
-	width:230px;
-	margin:0 auto;
-	text-align: center;
+.imgBox {
+    position: relative;
+    width: 230px;
+    margin: 0 auto;
+    text-align: center;
 }
-.boxDesc{
-	position: absolute;
-	width:200px;
-	z-index: 0;
-	margin:0 auto;
-	top:10px;
+.boxDesc {
+    position: absolute;
+    width: 200px;
+    z-index: 0;
+    margin: 0 auto;
+    top: 10px;
 }
-.infoBox img:hover{
-	-webkit-filter: drop-shadow(0px 0px 6px rgb(26, 140, 255)); /* Safari */
+.infoBox img:hover {
+    -webkit-filter: drop-shadow(0px 0px 6px rgb(26, 140, 255)); /* Safari */
     filter: drop-shadow(0px 0px 6px rgb(26, 140, 255));
 }
-#sourceBox li p{
-	color: rgb(26, 140, 255);
+#sourceBox li p {
+    color: rgb(26, 140, 255);
 }
-#noteHead{
-	z-index: -1;
-	position: absolute;
-	top:1020px;
-	left:5%;
+#noteHead {
+    position: relative;
+    padding: 30px 50px 10px;
 }
-.frontPg2{text-align: center;}
+.frontPg2 {
+    text-align: center;
+}
 /*---------------------general style---------------------*/
-a:link {text-decoration: none;}
-a:visited {text-decoration: none;}
-a:hover {color: white;}
-a:active {color: rgb(26, 140, 255);}
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    color: white;
+}
+a:active {
+    color: rgb(26, 140, 255);
+}
 /*------------------------Footer--------------------------*/
 
 #listBox {
@@ -337,10 +332,6 @@ a:active {color: rgb(26, 140, 255);}
     column-count: 1;
 }
 
-#description{
+#description {
     font-size: 20px !important;
 }
-
-
-
-

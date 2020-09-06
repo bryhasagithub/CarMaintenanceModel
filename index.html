@@ -13,69 +13,61 @@
         <link rel="stylesheet" type="text/css" href="scatter/scatterstylesheet.css">
    		<script type= "text/javascript" src="https://d3js.org/d3.v3.min.js"></script>   
   </head>
-	<body>		
-		<div class = "frontPg1">
-		 	<header id="headerBar">
-				<nav id = "navList">
-						<a href id = "nav"="#" title="Return to the homepage" id="logo">
-						<img id ="headLogo" src ="images/headWheel.png"></a>
-					<ul id = "headNav">
-						<li><a href id = "nav"="#">Home</a></li>
-						<li><A HREF= "#Scatterplot">D3 ScatterPlot</a></li>
-						<li><A HREF="#info1">How it Works</A></li>
-					</ul>
-				</nav>
-			</header>
-			<div id = "outlineBox">
-				<div id = "introBox">
-					<img id = "carTitle" alt="carTitle"  src="images/carTitle.png"/>
-					<img id = "finger1" alt="finger1"  src="images/fingerPoint.png"/>
-					<img id = "finger2" alt="finger2"  src="images/fingerPoint2.png"/>
+	<body>	
+		<header id="headerBar">
+			<nav id = "navList">
+					<a href id = "nav"="#" title="Return to the homepage" id="logo">
+					<img id ="headLogo" src ="images/headWheel.png"></a>
+				<ul id = "headNav">
+					<li><a href id = "nav"="#">Home</a></li>
+					<li><A HREF= "#Scatterplot">D3 ScatterPlot</a></li>
+					<li><A HREF="#info1">How it Works</A></li>
+				</ul>
+			</nav>
+		</header>	
+		<div class = "body">
+			<div class = "frontPg2">
+				<div class = "infoBox" id = "info1">
+					<p  class = "boxDesc" id = "1">
+			Obtained sources from Edmunds.com and YourMechanic.com by looking at FAQ’s, and articles that stated the average mileage expectancy for a particular car part. It is visualized it on a 1991 BMW M3. Of course, the parts can still be found in similar areas on other make and models but not all. We explain this more in “Let’s Expand”
+					</p>
+					<img class = "imgBox" id = "box1" alt="motive"  src="images/Sources.png"/>
+				</div>
+				<div class = "infoBox" id = "info2">
+					<p class = "boxDesc" id = "2">Love for cars was the spark to the idea behind this data visualization. </p>
+					<img class = "imgBox" id = "box2" alt="sources"  src="images/ourMotive.png"/>
+				</div>
+				<div class = "infoBox" id = "info3">
+	
+					<p class = "boxDesc" id = "3"> On a larger scale, this visualization can be customized by user data (year, make, model) Reason by example would be that A FWD sedan will have different location for their car parts compared to a Mid Engine Bus. Obtaining user input on their mileage can also be a new field to explore as that opens the window of estimating what needs replacement. </p>
+					<img class = "imgBox"id = "box3" alt="expand"  src="images/expand.png"/>
 				</div>
 			</div>
-			<h1 id = "headTitle">The Breakdown</h1>
-			<p id = "noteHead"> Click on "The Breakdown" title to reset the car parts</p>
-			<div id = "carBox">
-				<img id = "car" alt="carOutline"  src="js/CarModel/car Outline.png"/>
-				<div id = "carModelBox"></div>
+			<div id = "graphBody">
+			<h1 id = "Scatterplot"><bold> Scatterplot </bold></h1>
+			<!-- Your D3.js code for making a Bar Graph -->
+			<script type="text/javascript" src="scatter/scatterplot.js"></script>
+			  
+			<h2 id = "description" >This little additional visualization shows the mileage at when the car part is typically changed out on a pair of axis</h2>
+			<h3 id = "axisDesc">Hover over the dots to enable zooming function</h3>
+	
+			<h3 id = "sources">All the artwork is original and done by Bry Nguyen</h3>
+				
 			</div>
-			<div id = "listBox">
-				<div id = "partsContainer"></div>
-			</div>
-			<div id = "popUpBox">
-				<h2 id = "name"></h2>
-				<p id = "miles"></p>
-			</div>
-
+			<p id = "noteHead"> Click on wheel in the navbar to reset!</p>
+				<div id = "listBox">
+					<div id = "partsContainer"></div>
+				</div>
+				<div id = "popUpBox">
+					<h2 id = "name"></h2>
+					<p id = "miles"></p>
+				</div>
+				<div id = "carBox">
+					<img id = "car" alt="carOutline"  src="js/CarModel/car Outline.png"/>
+					<div id = "carModelBox"></div>
+				</div>
 		</div>
-		<div class = "frontPg2">
-			<div class = "infoBox" id = "info1">
-				<p  class = "boxDesc" id = "1">
-        Obtained sources from Edmunds.com and YourMechanic.com by looking at FAQ’s, and articles that stated the average mileage expectancy for a particular car part. It is visualized it on a 1991 BMW M3. Of course, the parts can still be found in similar areas on other make and models but not all. We explain this more in “Let’s Expand”
-				</p>
-				<img class = "imgBox" id = "box1" alt="motive"  src="images/Sources.png"/>
-			</div>
-			<div class = "infoBox" id = "info2">
-				<p class = "boxDesc" id = "2">Love for cars was the spark to the idea behind this data visualization. </p>
-				<img class = "imgBox" id = "box2" alt="sources"  src="images/ourMotive.png"/>
-			</div>
-			<div class = "infoBox" id = "info3">
-
-				<p class = "boxDesc" id = "3"> On a larger scale, this visualization can be customized by user data (year, make, model) Reason by example would be that A FWD sedan will have different location for their car parts compared to a Mid Engine Bus. Obtaining user input on their mileage can also be a new field to explore as that opens the window of estimating what needs replacement. </p>
-				<img class = "imgBox"id = "box3" alt="expand"  src="images/expand.png"/>
-			</div>
-		</div>
-		<div id = "graphBody">
-	    <h1 id = "Scatterplot"><bold> Scatterplot </bold></h1>
-	    <!-- Your D3.js code for making a Bar Graph -->
-	    <script type="text/javascript" src="scatter/scatterplot.js"></script>
-	      
-	    <h2 id = "description" >This little additional visualization shows the mileage at when the car part is typically changed out on a pair of axis</h2>
-	    <h3 id = "axisDesc">Hover over the dots to enable zooming function</h3>
-
-	    <h3 id = "sources">All the artwork is original and done by yours truely, Brian Nguyen</h3>
-	    	
-		</div>
+		
 	</body>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 		<script type="text/javascript" src=" js/main.js"></script>
