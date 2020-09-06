@@ -32,7 +32,7 @@
 }
 html {
     background-color: #ffffff;
-    max-width: 100%;
+    width: 100;
     overflow-x: hidden;
 }
 body {
@@ -51,9 +51,11 @@ h1 {
 h2 {
     font-family: "Raleway", sans-serif !important;
     font-size: 40px;
+    padding-left: 50px;
 }
 h3 {
     font-family: "Raleway", sans-serif !important;
+    padding-left: 50px;
 }
 #headTitle {
     text-align: center;
@@ -220,7 +222,7 @@ img#headLogo:hover {
     padding: 0;
     margin: 0 auto;
 	opacity: 0.95;
-	height: 400px;
+	height: 500px;
 }
 .parts {
     position: absolute;
@@ -327,4 +329,20 @@ a:active {
 
 #description {
     font-size: 20px !important;
+}
+
+/* Media Query */
+@media (max-width: 1000px) {
+    #carBox {
+        height:300px
+    }
+}
+@media (max-width: 768px) {
+    .frontPg2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .infoBox {
+        width: 100%;
+    }
 }
